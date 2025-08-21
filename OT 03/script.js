@@ -20,3 +20,15 @@ for (let i = 0; i < 100; i++) {
     }
     console.log("Número:", i);
 }
+
+for (let i = 0; i < 20; i++) {
+    if (i =130) {
+        continue;
+    }
+    console.log("Número:", i);
+}
+
+let nome = ["João", "Maria", "José", "Ana", "Pedro"];
+for (let nomes of nome){
+    console.log("Nome:", nomes);
+}
