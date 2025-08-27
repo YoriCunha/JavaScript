@@ -1,15 +1,15 @@
 
-// let age = 65;
+let age = 65;
 
-// if (age < 13) {
-//     console.log("Criança")
-// } else if (age >= 13 && age <= 17) {
-//     console.log("Adolescente")
-// } else if (age >= 18 && age <= 64) {
-//     console.log("Aduto")
-// } else if (age >= 65) {
-//     console.log("Velho")
-// }
+if (age < 13) {
+    console.log("Criança")
+} else if (age >= 13 && age <= 17) {
+    console.log("Adolescente")
+} else if (age >= 18 && age <= 64) {
+    console.log("Aduto")
+} else if (age >= 65) {
+    console.log("Velho")
+}
 
 let number = prompt("Digite um numero: ");
 switch (number) {
@@ -27,5 +27,24 @@ switch (number) {
 
     case "4":
         alert("Você acertou!");
+        break;
+
+    case "5":
+        alert("Você errou!");
+        break;
+}
+
+let nota = prompt("Digite sua nota: ");
+switch (true) {
+    case (nota < 6):
+        alert("Reprovado");
+        break;
+    
+    case (nota >= 6 && nota <= 7):
+        alert("Recuperação");
+        break;
+
+    case (nota > 7):
+        alert("Aprovado");
         break;
 }
