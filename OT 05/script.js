@@ -43,5 +43,17 @@
 // }
 // calcularIMC(peso, altura);
 
+let word = prompt("Digite uma palavra: ");
+function maiusculas(word){
+    alert("A palavra em maiúsculas é: " + word.toUpperCase());
+}
+maiusculas(word);
 
 
+function multiplicaPorDez(number){
+    let number = prompt("Digite um número para calcular o fatorial: ");
+    let X = (number) => number * 10;
+    alert("O número multiplicado por 10 é: " + X(number));
+}
+ multiplicaPorDez(number);
+ 
