@@ -24,6 +24,6 @@ for (let prop in carro) {
     } else if (prop === "modelo") {
         carro[prop] = "Jetta";
     } else if (prop === "ano") {
-        carro[prop] = 2023;
+        carro[prop] = 2024;
     }
 }
