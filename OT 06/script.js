@@ -4,14 +4,14 @@ let carro = {
     ano: 2022
 };
 
-console.log(carro.modelo); 
+console.log(carro.modelo);
 
 carro.cor = "preto";
 carro.ano = 2023;
 console.log(carro);
 
 let calculadora = {
-    soma: function(a, b) {
+    soma: function (a, b) {
         return a + b;
     }
 };
@@ -27,3 +27,18 @@ for (let prop in carro) {
         carro[prop] = 2024;
     }
 }
+
+let livro = {
+    titulo: "A Biblia",
+    autor: "Deus",
+}
+
+console.log(livro);
+
+const novoTitulo = "A Biblia Sagrada";
+
+const mudaTitulo = (livro, novoTitulo) =>{
+    livro.titulo = novoTitulo;
+}
+mudaTitulo(livro, novoTitulo);
+console.log(livro);
