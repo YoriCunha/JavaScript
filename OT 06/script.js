@@ -42,3 +42,15 @@ const mudaTitulo = (livro, novoTitulo) =>{
 }
 mudaTitulo(livro, novoTitulo);
 console.log(livro);
+
+let moto = {
+    marca: "Honda",
+    modelo: "CB500F",
+    ano: 2021
+}
+Object.keys(moto).forEach((key) => {
+    console.log(key, moto[key]);
+});
+Object.values(moto).forEach((value) => {
+    console.log(value);
+});
