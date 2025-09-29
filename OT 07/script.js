@@ -1,20 +1,29 @@
-let map = new map();
-map.set("chave1","valor1");
-map.set("chave2","valor2");
 
-console.log(map.get("chave1")); // valor1
-console.log(map.get("chave2")); // valor2
+// por em pratica //
 
-for (let [chave,valor] of map) {
-    console.log(`${chave}: ${valor}`);
+let livro = new Map();
+livro.set("O senhor dos aneis"," J.R.R. Tolkien");
+livro.set("Harry Potter"," J.K. Rowling");
+livro.set("O hobbit"," J.R.R. Tolkien");
+
+console.log(livro.get("Harry Potter")); // J.K. Rowling
+
+for (let [titulo,autor] of livro) {
+    console.log(`${titulo} foi escrito por ${autor}`);
 }
 
-console.log(map.size); // mostra quantos pares chave-valor tem no Map
-map.delete("chave2"); // remove um par baseado na chave
-console.log(map.has("chave2")); // verifica se o Map tem a chave
+console.log(livro.size); // 3
+livro.delete("O hobbit");
 
-let mapParaObjeto = Object.fromEntries(map);
-console.log(mapParaObjeto);
+for (let [titulo,autor] of livro) {
+    console.log(`${titulo} foi escrito por ${autor}`);
+}
 
-let chavesArray = [...map.keys()];
-console.log(chavesArray);
+console.log(livro.has("O Hobbit"));
+
+let colecao = new Map();
+colecao.set("carro"," fusca");
+colecao.set("ano"," 2024");
+
+let obj = Object.fromEntries(colecao);
+console.log(obj); // { carro: ' fusca', ano: ' 2024' }
