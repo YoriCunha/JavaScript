@@ -10,3 +10,8 @@ console.log(soma);
 
 soma = (soma * 3);
 console.log(soma);
+
+let unisenai = true;
+let comida = ["arroz", "feijão", "ovo"];
+
+console.log(comida[1]);
