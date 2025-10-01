@@ -24,3 +24,33 @@ class Estudante extends pessoa {
     }
 }
 
+let ana = new Estudante("Ana", 22, "Matemática");
+
+class Utilitario {
+    static numeroAleatorio() {
+        return Math.floor(Math.random() * 100);
+    }
+} // não precisa instanciar a classe para usar o método
+
+console.log(Utilitario.numeroAleatorio());
+
+
+class ContaBancaria{
+    #saldo;
+
+    constructor(saldoInicial){
+        this.#saldo = saldoInicial;
+    }
+
+    depositar(valor){
+        this.#saldo += valor;
+    }
+
+    getSaldo(){
+        return this.#saldo;
+    }
+}
+
+let conta = new ContaBancaria(1000);
+conta.depositar(500);
+console.log(conta.getSaldo());
