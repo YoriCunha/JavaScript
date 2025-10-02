@@ -54,3 +54,10 @@ class ContaBancaria{
 let conta = new ContaBancaria(1000);
 conta.depositar(500);
 console.log(conta.getSaldo());
+
+class Animal {
+    constructor(nome,som){
+        this.nome = nome;
+        this.som = som;
+    }
+}
